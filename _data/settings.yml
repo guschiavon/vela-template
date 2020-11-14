@@ -1,0 +1,50 @@
+# Configuration file for access via CloudCannon interface
+
+global:
+  title: Cursos de Vela Oceânica - Velamagia
+  tel: '+5547992041363'
+  email: 'ola@velamagia.com.br'
+##### Fonts #####
+fonts:
+  google_fonts_embed_code_block: '<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,300;0,400;0,600;1,100;1,300;1,400;1,600&family=Questrial&display=swap" rel="stylesheet">' 
+  body_font_family: "'Bitter', serif;"
+  heading_font_family: "'Questrial', sans-serif;"
+
+##### Site main colors #####
+colors:
+  dark_color: '#363636'
+  light_color: 'whitesmoke'
+  accent_color: '#00897b'
+
+##### Navigation menus and submenus #####
+navigation:
+  menus:
+    - name: Home
+      url: /
+      dropdown: false
+      submenus:
+        - name:
+          url:
+    - name: The Villa
+      url: /the-villa
+      dropdown: false
+      submenus:
+        - name:
+          url:
+    - name: The Bukit
+      url:
+      dropdown: true
+      submenus:
+        - name: Waves
+          url:
+        - name: Beaches
+          url:
+        - name: Culture
+          url:
+    - name: Book
+      url:
+      dropdown: false
+      submenus:
+        - name:
+          url:
+

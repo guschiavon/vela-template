@@ -1,0 +1,38 @@
+
+.img-txt-1 {
+ .img-column {
+   position: relative;
+   .btn-outline {
+     position: absolute;
+     top  : 50%;
+     left : 50%;
+     transform: translate(-50%, -50%);
+    }
+    .img-container {
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      // position: relative;
+      // z-index: 0;
+      // padding: 2rem;
+      &::before {
+        content: "";
+        border: 2px solid $accent-color;
+        position: absolute;
+        top: -2rem;
+        right: -2rem;
+        height: inherit;
+        width: inherit;
+        z-index: 0;
+      }
+    }
+  }
+ svg {
+   &:first-of-type {
+     transform: translateY(-99.4%);
+   }
+   &:last-of-type {
+     transform: translateY(99.4%);
+   }
+ } 
+}

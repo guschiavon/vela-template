@@ -1,0 +1,113 @@
+
+// Positioning
+.center { text-align  : center; }
+.right  { text-align  : right;  }
+.left   { text-align  : left;   }
+
+// Padding
+
+.text-padding {
+  padding : 1.5rem;
+}
+// X-axis
+.padding-x-lg {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.padding-x-md {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.padding-x-sm {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+// Y-axis
+.padding-y-lg {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.padding-y-md {
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+.padding-y-sm {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+// Flexbox direction and positioning
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// Background colors
+
+.bg-dark {
+  background-color  : $dark-color;
+  color   : $light-color;
+  svg {
+    fill  : $dark-color;
+  }
+}
+.bg-light {
+  background-color  : $light-color;
+  color   : $dark-color;
+  svg {
+    fill  : $light-color;
+  }
+}
+.bg-accent {
+  background-color  : $accent-color;
+  color   : $light-color;
+  svg {
+    fill  : $accent-color;
+  }
+}
+
+// Containers & Images
+
+.responsive-img {
+  object-fit      : cover;
+  object-position : center;
+  overflow        : hidden;
+  height          : 100%;
+  width           : 100%;
+}
+
+.img-container-lg,
+.img-container-md,
+.img-container-sm {
+  margin    : auto;
+}
+
+.img-container-lg {
+  height    : 400px;
+  width     : 400px;
+}
+.img-container-md {
+  height    : 300px;
+  width     : 300px;
+}
+.img-container-sm {
+  height    : 250px;
+  width     : 250px;
+}
+.img-box {
+  max-height: 250px;
+}
+.full-width-img {
+  width: 100%;
+  height: 250px;
+}
+
+.map {
+  height    : 300px;
+  iframe {
+    height  : 100%;
+  }
+}

@@ -1,0 +1,28 @@
+
+.banner-container {
+  position: relative;
+  // padding: 3rem 1.5rem;
+  height: 800px;
+  background-position: center;
+  z-index: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    opacity: 0.1;
+    z-index: 1;
+  }
+}
+.banner-content {
+  position: relative;
+  width:50%;
+  margin-right: auto;
+  padding: 3%;
+  background-color: #2b4074a2;
+  color: whitesmoke;
+  z-index: 10;
+}

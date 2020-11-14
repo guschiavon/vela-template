@@ -1,0 +1,53 @@
+<header class="header-container">
+  <div class="nav-container">
+    <a href="/">
+      <div class="nav-logo">
+        <!-- empty div for the background logo image -->
+      </div>
+    </a>
+    <nav class="desktop-nav">
+      {% for menu in site.data.settings.navigation.menus %}
+      {% if menu.dropdown %}
+      <a href="" class="nav-link">{{menu.name}}</a>
+      <ul class="dropdown-container">
+        <li class="dropdown-wrapper">
+          <a href="" class="dropdown-item">{{submenu.name}}</a>
+        </li>
+      </ul>
+      {% else %}
+      <a href="" class="nav-link">{{menu.name}}</a>
+      {% endif %}
+      {% endfor %}
+    </nav>
+    <button id="burger" class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="mobile-nav" class="mobile-nav">
+      {% for menu in site.data.settings.navigation.menus %}
+      {% if menu.dropdown %}
+      <a href="" class="nav-link">{{menu.name}}</a>
+      <ul class="dropdown-container">
+        <li class="dropdown-wrapper">
+          {% for submenu in menu.submenus %}
+          <a href="" class="dropdown-item">{{submenu.name}}</a>
+          {% endfor %}
+        </li>
+      </ul>
+      {% else %}
+      <a href="" class="nav-link">{{menu.name}}</a>
+      {% endif %}
+      {% endfor %}
+    </nav>     
+  </div>
+  <div class="header-content">
+    <h1>
+      Tome controle da <strong>sua vida.</strong>
+    </h1>
+    <span>
+      Está na hora de tornar seu sonho de <strong>aprender a velejar</strong> em realidade.<br>Expanda seus horizontes junto com a Escola de Vela Oceânica Velamagia.
+    </span>
+  </div>
+</header>

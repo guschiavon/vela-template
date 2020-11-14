@@ -1,0 +1,46 @@
+# Enable CloudCannon CMS interface
+cloudcannon:
+  data: true
+
+# Sass configuration
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Global upload directory for images
+uploads_dir: /assets/images
+
+# Paths
+## Global permalinks
+permalink: /:path
+
+## Collections permalinks
+collections:
+  all-pages:
+    output: true
+    permalink: /:title
+
+# Dependencies
+plugins:
+  - jekyll-sitemap
+  - jekyll-webp
+  - jekyll-responsive-image
+
+# Configuration of the jekyll-responsive-image plugin
+responsive_image:
+  template: _includes/templates/image-tag-lazy.html
+  sizes:
+    - width: 360
+    - width: 480
+    - width: 600
+    - width: 800
+    - width: 1400
+  base_path: assets/images
+  output_path_format: assets/images/srcset/%{width}/%{basename}
+
+# Configuration of the jekyll-webp plugin    
+webp:
+  enabled: true
+  quality: 75
+  img_dir: ["/assets/images/"]
+  nested: true

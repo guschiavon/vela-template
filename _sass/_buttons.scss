@@ -1,0 +1,32 @@
+@mixin hover-transition {
+  transition: 0.2s all;
+}
+
+.btn,
+.btn-outline {
+  font-family: $heading-font;
+  letter-spacing: 1px;
+  padding: 1.2rem 1.5rem;
+  margin: 1rem auto;
+  border: 2px solid;
+  @include hover-transition;
+}
+
+.btn {
+  background-color  : $accent-color;
+  color             : $light-color;
+  border-color      : inherit;
+  &:hover {
+    background-color: lighten($accent-color, 10);
+  }
+}
+
+.btn-outline {
+  color         : $light-color;
+  border-color  : inherit;
+  &:hover {
+    background-color  : $accent-color;
+    border-color      : $accent-color;
+  }
+}
+
