@@ -1,15 +1,54 @@
 .nav-container {
-  padding: 2rem 10%;
   display         : flex;
   align-items     : center;
   justify-content : space-between;
 }
 
-.mobile-nav,
-.desktop-nav {
-  display : none;
+.nav-link {
+  font-family   : $body-font;
+  font-size     : 1.2rem;
+  padding       : 0.3rem;
+  margin-left   : 1rem;
+  text-transform: uppercase;
+  color         : $light-color;
+  &:hover,
+  &:focus-within {
+    color: $accent-color;
+  }
+}
+.nav-link.dropdown {
+  position: relative;
+}
+.nav-social {
+  width: 30px;
+  padding: 0.3rem;
+  &:hover,
+  &:focus-within {
+    svg {
+      fill: $accent-color;
+    }
+  }
 }
 
+.mobile-nav {
+  display : none;
+}
+.nav-branding {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .clickable-logo {
+    width: 80px;
+  }
+  a {
+    color: whitesmoke;
+    padding: 0.5rem;
+    font-size: 2rem;
+    &:first-of-type {
+      padding-left: 0;
+    }
+  }
+}
 .nav-logo {
   $axis   : 100px;
   width   : $axis;
@@ -24,12 +63,45 @@
   display   : inline-block;
 }
 
+.nav-link.dropdown:hover,
+.nav-link.dropdown:focus-within {
+  .dropdown-container {
+    display : block;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+  }
+}
+
+.dropdown-container {
+  display   : none;
+  position  : absolute;
+  top       : 2rem;
+  padding   : 1rem;
+  text-align: left;
+  color: $accent-color;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  .dropdown-wrapper {
+    list-style: none;
+    .dropdown-item {
+      font-size: 0.9rem;
+      &:hover,
+      &:focus-within {
+        color: darkcyan;
+      }
+    }
+  }
+}
+
 //  Mobile navigation
 .burger {
   position  : relative;
   width     : 30px;
   height    : 20px;
-  z-index   : 1000;
+  z-index   : 1001;
+  display   : none;
   span {
     color: $light-color;
     background-color: $light-color;
@@ -54,6 +126,7 @@
 .mobile-nav {
   position  : absolute;
   top       : 0;
+  left      : 0;
   width     : 100%;
   height    : 100%;
   padding-top : 50%;
@@ -63,8 +136,10 @@
   opacity     : 0.9;
   overflow-y  : hidden;
   transition  : 0.2s all;
+  z-index: 1000;
   .nav-link {
-    font-size   : 1.5rem;
+    font-size : 1.5rem;
+    color     : $accent-color;
   }
 }
 
@@ -75,6 +150,7 @@
 
 .burger.open {
   span {
+    color: $accent-color;
     &:nth-of-type(2),
     &:nth-of-type(3) {
       transform-origin  : left-bottom;

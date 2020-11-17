@@ -16,7 +16,8 @@
   background-color  : $accent-color;
   color             : $light-color;
   border-color      : inherit;
-  &:hover {
+  &:hover,
+  &:focus-within {
     background-color: lighten($accent-color, 10);
   }
 }
@@ -24,7 +25,8 @@
 .btn-outline {
   color         : $light-color;
   border-color  : inherit;
-  &:hover {
+  &:hover,
+  &:focus-within {
     background-color  : $accent-color;
     border-color      : $accent-color;
   }

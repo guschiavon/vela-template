@@ -1,22 +1,28 @@
 <header class="header-container">
-  <div class="nav-container">
-    <a href="/">
-      <div class="nav-logo">
-        <!-- empty div for the background logo image -->
-      </div>
-    </a>
+  <div class="nav-container padding-x-lg padding-y-sm">
+    <div class="nav-branding">
+      <a href="/" class="clickable-logo"><img src="/assets/images/logo.png" alt="{{site.data.settings.global.title}}"></a>
+      <a href="/">Vela<strong>Magia</strong></a>
+    </div>
     <nav class="desktop-nav">
       {% for menu in site.data.settings.navigation.menus %}
       {% if menu.dropdown %}
-      <a href="" class="nav-link">{{menu.name}}</a>
-      <ul class="dropdown-container">
-        <li class="dropdown-wrapper">
-          <a href="" class="dropdown-item">{{submenu.name}}</a>
-        </li>
-      </ul>
+      <button class="nav-link dropdown">
+        {{menu.name}}
+        <ul class="dropdown-container">
+          {% for submenu in menu.submenus %}
+          <li class="dropdown-wrapper">
+            <a href="{{submenu.url}}" class="dropdown-item">{{submenu.name}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </button>
       {% else %}
-      <a href="" class="nav-link">{{menu.name}}</a>
+        <a href="{{menu.url}}" class="nav-link">{{menu.name}}</a>
       {% endif %}
+      {% endfor %}
+      {% for item in site.data.settings.global.social %}
+        <a href="{{item.url}}" class="nav-social" target="_blank">{% include social-icons.html icon=item.icon %}</a>
       {% endfor %}
     </nav>
     <button id="burger" class="burger">
@@ -28,21 +34,22 @@
     <nav id="mobile-nav" class="mobile-nav">
       {% for menu in site.data.settings.navigation.menus %}
       {% if menu.dropdown %}
-      <a href="" class="nav-link">{{menu.name}}</a>
-      <ul class="dropdown-container">
-        <li class="dropdown-wrapper">
-          {% for submenu in menu.submenus %}
-          <a href="" class="dropdown-item">{{submenu.name}}</a>
-          {% endfor %}
-        </li>
-      </ul>
+      <button class="nav-link">{{menu.name}}
+        <ul class="dropdown-container">
+          <li class="dropdown-wrapper">
+            {% for submenu in menu.submenus %}
+              <a href="{{submenu.url}}" class="dropdown-item">{{submenu.name}}</a>
+            {% endfor %}
+          </li>
+        </ul>
+      </button>
       {% else %}
-      <a href="" class="nav-link">{{menu.name}}</a>
+        <a href="{{menu.url}}" class="nav-link">{{menu.name}}</a>
       {% endif %}
       {% endfor %}
     </nav>     
   </div>
-  <div class="header-content">
+  <div class="header-content padding-x-lg">
     <h1>
       Tome controle da <strong>sua vida.</strong>
     </h1>

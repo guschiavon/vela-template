@@ -2,8 +2,16 @@
 
 global:
   title: Cursos de Vela Oceânica - Velamagia
-  tel: '+5547992041363'
+  tel: '+55 (47) 9 9204-1363'
   email: 'ola@velamagia.com.br'
+  social:
+    - icon: "Facebook"
+      url: 'https://facebook.com'
+    - icon: "Instagram"
+      url: 'https://instagram.com'   
+    - icon: "Messenger"
+      url: 'https://messenger.com'
+    
 ##### Fonts #####
 fonts:
   google_fonts_embed_code_block: '<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,300;0,400;0,600;1,100;1,300;1,400;1,600&family=Questrial&display=swap" rel="stylesheet">' 
@@ -14,34 +22,36 @@ fonts:
 colors:
   dark_color: '#363636'
   light_color: 'whitesmoke'
-  accent_color: '#00897b'
+  accent_color: '#003453'
 
 ##### Navigation menus and submenus #####
 navigation:
   menus:
-    - name: Home
+    - name: Início
       url: /
       dropdown: false
       submenus:
         - name:
           url:
-    - name: The Villa
-      url: /the-villa
-      dropdown: false
+    - name: Cursos
+      url: 
+      dropdown: true
       submenus:
-        - name:
-          url:
-    - name: The Bukit
+        - name: Iniciante
+          url: /cursos/iniciante
+        - name: Aperfeiçoamento
+          url: /cursos/aperfeiçoamento
+    - name: Passeios
       url:
       dropdown: true
       submenus:
-        - name: Waves
+        - name: Florianópolis
           url:
-        - name: Beaches
+        - name: Itajaí
           url:
-        - name: Culture
+        - name: Porto Belo
           url:
-    - name: Book
+    - name: Contato
       url:
       dropdown: false
       submenus:

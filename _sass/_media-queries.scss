@@ -1,0 +1,64 @@
+@media (min-width: 300px) and (max-width: 660px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .header-container {
+    min-height: 550px;
+  }
+  .header-content {
+    width: 100%;
+  }
+  .banner-content {
+    width: 100%;
+  }
+  [class*=padding-x] {
+    padding-left : 3%;
+    padding-right: 3%;
+  }
+  .img-txt-1,
+  .img-txt-2 {
+    .img-column .img-container {
+      height: 350px;
+      &:before {
+        display: none;
+      }
+    }
+  }
+  .nav-branding {
+    .clickable-logo {
+      width: 50px;
+    }
+    a {
+      font-size: 1.5rem;
+    }
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .banner-container {
+    height: 650px;
+  }
+  .banner-content {
+    background-color: $accent-color;
+    padding: 2rem 1rem;
+    &::before {
+      display: none;
+    } 
+  }
+  p,
+  span,
+  blockquote,
+  cite,
+  li,
+  ul,
+  ol,
+  small {
+    font-size: 1.2rem;
+  }
+  .img-txt-2 {
+    margin-top: -10%;
+  }
+  .burger {
+    display: block;
+  }
+}
