@@ -72,7 +72,7 @@ img {
 ul, ol {
   li {
     list-style: circle;
-    list-style-position: unset;
+    list-style-position: inside;
     margin-bottom: 0.5rem;
     &:last-of-type {
       margin-bottom: 0;
