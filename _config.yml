@@ -16,9 +16,12 @@ permalink: /:path
 
 ## Collections permalinks
 collections:
-  all-pages:
+  cursos:
     output: true
-    permalink: /:title
+    permalink: /cursos/:title
+  passeios:
+    output: true
+    permalink: /passeios/:title
 
 # Dependencies
 plugins:
@@ -50,3 +53,34 @@ icons:
  - "Instagram"
  - "YouTube"
  - "Email"
+
+sections: []
+_array_structures:
+sections:
+  style: select
+  values:
+    - label: Overview
+      description: Um parágrafo de abertura para a página
+      icon: text
+      value:
+        _id: overview
+        label: Overview
+        cabecalho_html:
+        texto_html:
+        incluir_botao: false
+        texto_botao:
+        destino_botao_url:
+    - label: Image Boxes
+      description: Grid com imagens e descrição de conteúdo
+      icon: text
+      value:
+        _id: image-boxes
+        label: Image Boxes
+        imagem_1_image:
+        imagem_1_alt_text:
+        cabecalho_1_html:
+        paragrafo_1_html:
+        imagem_2_image:
+        imagem_2_alt_text:
+        cabecalho_2_html:
+        paragrafo_2_html:

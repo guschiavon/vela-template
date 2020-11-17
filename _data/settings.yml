@@ -46,11 +46,11 @@ navigation:
       dropdown: true
       submenus:
         - name: Florianópolis
-          url:
+          url: /passeios/florianopolis
         - name: Itajaí
-          url:
+          url: /passeios/itajaí
         - name: Porto Belo
-          url:
+          url: /passeios/porto-belo
     - name: Contato
       url:
       dropdown: false

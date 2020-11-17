@@ -1,0 +1,40 @@
+<section id="image-boxes" class="image-boxes bg-light">
+  <div class="grid-noGutter-equalHeight">
+    <div class="col-6_sm-12-middle">
+      <div class="img-box">
+        {% unless section.imagem_1_image == nil %}
+        <img src="{{section.imagem_1_image}}" alt="{{section.imagem_1_alt_text}}" class="responsive-img">
+        {% endunless %}
+      </div>
+    </div>
+    <div class="col-6_sm-12-middle">
+      <div class="flex-center text-padding center">
+        <h2>
+          {{section.cabecalho_1_html}}
+        </h2>
+        <p>
+          {{section.paragrafo_1_html}}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="grid-noGutter-equalHeight-reverse">
+    <div class="col-6_sm-12-middle">
+      <div class="img-box">
+        {% unless section.imagem_2_image == nil %}
+        <img src="{{section.imagem_2_image}}" alt="{{section.imagem_2_alt_text}}" class="responsive-img">
+        {% endunless %}
+      </div>
+    </div>
+    <div class="col-6_sm-12-middle">
+      <div class="flex-center text-padding center">
+        <h2>
+          {{section.cabecalho_2_html}}
+        </h2>
+        <p>
+          {{section.paragrafo_2_html}}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
