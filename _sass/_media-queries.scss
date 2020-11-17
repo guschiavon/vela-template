@@ -61,4 +61,16 @@
   .burger {
     display: block;
   }
+  .footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footer-branding {
+      justify-content: center;
+    }
+    .social {
+      margin-top: 2rem;
+    }
+  }
 }

@@ -34,15 +34,15 @@
     <nav id="mobile-nav" class="mobile-nav">
       {% for menu in site.data.settings.navigation.menus %}
       {% if menu.dropdown %}
-      <button class="nav-link">{{menu.name}}
-        <ul class="dropdown-container">
+      <!-- <button class="nav-link"> -->
+      <ul class=".dropdown-container nav-link">{{menu.name}}
           <li class="dropdown-wrapper">
             {% for submenu in menu.submenus %}
               <a href="{{submenu.url}}" class="dropdown-item">{{submenu.name}}</a>
             {% endfor %}
           </li>
         </ul>
-      </button>
+      <!-- </button> -->
       {% else %}
         <a href="{{menu.url}}" class="nav-link">{{menu.name}}</a>
       {% endif %}

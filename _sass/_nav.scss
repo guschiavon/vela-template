@@ -7,7 +7,7 @@
 .nav-link {
   font-family   : $body-font;
   font-size     : 1.2rem;
-  padding       : 0.3rem;
+  padding       : 0.3rem 0.4rem;
   margin-left   : 1rem;
   text-transform: uppercase;
   color         : $light-color;
@@ -53,7 +53,7 @@
   $axis   : 100px;
   width   : $axis;
   height  : $axis;
-  padding: 0.3rem;
+  padding : 0.3rem;
   margin-right  : 2rem;
   overflow      : hidden;
   background-image    : url(/assets/images/logo.png);
@@ -65,6 +65,9 @@
 
 .nav-link.dropdown:hover,
 .nav-link.dropdown:focus-within {
+  // background-color: whitesmoke;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   .dropdown-container {
     display : block;
     transition: 0.3s all;
@@ -76,11 +79,13 @@
   display   : none;
   position  : absolute;
   top       : 2rem;
+  left      : 0;
   padding   : 1rem;
   text-align: left;
   color: $accent-color;
   background-color: whitesmoke;
   border-radius: 5px;
+  // border-top-left-radius: 0;
   transition: 0.3s all;
   -webkit-transition: 0.3s all;
   .dropdown-wrapper {
