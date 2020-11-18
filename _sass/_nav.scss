@@ -93,6 +93,7 @@
   -webkit-transition: 0.3s all;
   .dropdown-wrapper {
     position: relative;
+    list-style: none;
     .dropdown-item {
       font-size: 0.9rem;
       &:hover,
