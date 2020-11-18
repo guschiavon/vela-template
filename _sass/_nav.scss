@@ -32,6 +32,9 @@
 
 .mobile-nav {
   display : none;
+  .dropdown-item {
+    font-size: 1rem;
+  }
 }
 .nav-branding {
   display: flex;
@@ -89,7 +92,7 @@
   transition: 0.3s all;
   -webkit-transition: 0.3s all;
   .dropdown-wrapper {
-    list-style: none;
+    position: relative;
     .dropdown-item {
       font-size: 0.9rem;
       &:hover,
@@ -133,18 +136,34 @@
   top       : 0;
   left      : 0;
   width     : 100%;
-  height    : 100%;
-  padding-top : 50%;
+  height    : 100vh;
+  padding-top : 20%;
   text-align  : center;
   line-height : 2;
   background-color  : whitesmoke;
   opacity     : 0.9;
   overflow-y  : hidden;
-  transition  : 0.2s all;
+  // transition  : 0.5s all;
   z-index: 1000;
-  .nav-link {
+  .nav-link {    
     font-size : 1.5rem;
     color     : $accent-color;
+    margin-left: unset;
+  }
+  .nav-link.dropdown {
+    text-decoration: underline;
+    li {
+     list-style: none;
+     a {
+       font-size: 0.8rem;
+
+     }
+    }
+  }
+  .nav-social {
+    svg {
+     fill: $accent-color;
+    }
   }
 }
 

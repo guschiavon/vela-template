@@ -33,18 +33,24 @@
     <nav id="mobile-nav" class="mobile-nav">
       {% for menu in site.data.settings.navigation.menus %}
       {% if menu.dropdown %}
-      <!-- <button class="nav-link"> -->
-      <ul class=".dropdown-container nav-link">{{menu.name}}
+      
+      <ul class="dropdown nav-link">{{menu.name}}
+        {% for submenu in menu.submenus %}
           <li class="dropdown-wrapper">
-            {% for submenu in menu.submenus %}
-              <a href="{{submenu.url}}" class="dropdown-item">{{submenu.name}}</a>
-            {% endfor %}
+            <a href="{{submenu.url}}" class="dropdown-item">{{submenu.name}}</a>
           </li>
-        </ul>
-      <!-- </button> -->
+        {% endfor %}
+      </ul>
+      
       {% else %}
         <a href="{{menu.url}}" class="nav-link">{{menu.name}}</a>
       {% endif %}
       {% endfor %}
+      <div>
+        {% for item in site.data.settings.global.social %}
+          <a href="{{item.url}}" class="nav-social" target="_blank">{% include social-icons.html icon=item.icon %}</a>
+        {% endfor %}
+
+      </div>
     </nav>     
   </div>

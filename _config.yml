@@ -14,6 +14,11 @@ uploads_dir: /assets/images
 ## Global permalinks
 permalink: /:path
 
+_comments:
+  fundo: 'Escolha o fundo da seção entre as opções'
+  description_text: 'Importante para o posicionamento nos sites de busca; utilizar palavras-chave e descrição do conteúdo em menos de 160 caracteres'
+  
+
 ## Collections permalinks
 collections:
   cursos:
@@ -22,6 +27,20 @@ collections:
   passeios:
     output: true
     permalink: /passeios/:title
+
+defaults:
+  -
+    scope:
+      path: "/cursos"
+      type: "pages"
+    values:
+      layout: pages
+      title:
+      description_text:
+      imagem_principal_image:
+      chamada_principal:
+      header_content_text:
+      sections: 
 
 # Dependencies
 plugins:
@@ -54,33 +73,51 @@ icons:
  - "YouTube"
  - "Email"
 
+fundos:
+  - "bg-light"
+  - "bg-dark"
+  - "bg-accent"
+
 sections: []
 _array_structures:
-sections:
-  style: select
-  values:
-    - label: Overview
-      description: Um parágrafo de abertura para a página
-      icon: text
-      value:
-        _id: overview
-        label: Overview
-        cabecalho_html:
-        texto_html:
-        incluir_botao: false
-        texto_botao:
-        destino_botao_url:
-    - label: Image Boxes
-      description: Grid com imagens e descrição de conteúdo
-      icon: text
-      value:
-        _id: image-boxes
-        label: Image Boxes
-        imagem_1_image:
-        imagem_1_alt_text:
-        cabecalho_1_html:
-        paragrafo_1_html:
-        imagem_2_image:
-        imagem_2_alt_text:
-        cabecalho_2_html:
-        paragrafo_2_html:
+  sections:
+    style: select
+    values:
+      - label: Overview
+        description: Um parágrafo de abertura para a página
+        icon: text
+        value:
+          _id: overview
+          label: Overview
+          cabecalho_html:
+          texto_html:
+          incluir_botao: false
+          texto_botao:
+          destino_botao_url:
+      - label: Image Boxes
+        description: Grid com imagens e descrição de conteúdo
+        icon: text
+        value:
+          _id: image-boxes
+          label: Image Boxes
+          imagem_1_image:
+          imagem_1_alt_text:
+          cabecalho_1_html:
+          paragrafo_1_html:
+          imagem_2_image:
+          imagem_2_alt_text:
+          cabecalho_2_html:
+          paragrafo_2_html:
+      - label: Imagem e Texto
+        description: Seção com uma imagem e espaço para texto
+        icon: text
+        value:
+          _id: img-txt-1
+          label: Imagem e Texto
+          fundo:
+          cabecalho_html:
+          texto_html:
+          imagem_image:
+          imagem_alt_text:
+          texto_botao:
+          destino_botao_url: 
