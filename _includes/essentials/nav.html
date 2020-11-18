@@ -1,7 +1,7 @@
 <div class="nav-container padding-x-lg padding-y-sm">
     <div class="nav-branding">
-      <a href="/" class="clickable-logo"><img src="/assets/images/logo.png" alt="{{site.data.settings.global.title}}"></a>
-      <a href="/">Vela<strong>Magia</strong></a>
+      <a href="/" class="clickable-logo" name="homepage icon name="""><img src="/assets/images/logo.png" alt="{{site.data.settings.global.title}}"></a>
+      <a href="/" name="homepage title">Vela<strong>Magia</strong></a>
     </div>
     <nav class="desktop-nav">
       {% for menu in site.data.settings.navigation.menus %}
@@ -11,17 +11,17 @@
         <ul class="dropdown-container">
           {% for submenu in menu.submenus %}
           <li class="dropdown-wrapper">
-            <a href="{{submenu.url}}" class="dropdown-item">{{submenu.name}}</a>
+            <a href="{{submenu.url}}" class="dropdown-item" name="{{submenu.name}}">{{submenu.name}}</a>
           </li>
           {% endfor %}
         </ul>
       </button>
       {% else %}
-        <a href="{{menu.url}}" class="nav-link {%if menu.is_button %}btn{%endif%}">{{menu.name}}</a>
+        <a href="{{menu.url}}" class="nav-link {%if menu.is_button %}btn{%endif%}" name="{{menu.name}}">{{menu.name}}</a>
       {% endif %}
       {% endfor %}
       {% for item in site.data.settings.global.social %}
-        <a href="{{item.url}}" class="nav-social" target="_blank" rel="noreferrer">{% include social-icons.html icon=item.icon %}</a>
+        <a href="{{item.url}}" class="nav-social" target="_blank" rel="noreferrer" name="{{item.icon}}">{% include social-icons.html icon=item.icon %}</a>
       {% endfor %}
     </nav>
     <button id="burger" class="burger">
@@ -37,18 +37,18 @@
       <ul class="dropdown nav-link">{{menu.name}}
         {% for submenu in menu.submenus %}
           <li class="dropdown-wrapper">
-            <a href="{{submenu.url}}" class="dropdown-item">{{submenu.name}}</a>
+            <a href="{{submenu.url}}" class="dropdown-item" name="{{submenu.name}}">{{submenu.name}}</a>
           </li>
         {% endfor %}
       </ul>
       
       {% else %}
-        <a href="{{menu.url}}" class="nav-link">{{menu.name}}</a>
+        <a href="{{menu.url}}" class="nav-link" name="{{menu.name}}">{{menu.name}}</a>
       {% endif %}
       {% endfor %}
       <div>
         {% for item in site.data.settings.global.social %}
-          <a href="{{item.url}}" class="nav-social" target="_blank" rel="noreferrer">{% include social-icons.html icon=item.icon %}</a>
+          <a href="{{item.url}}" class="nav-social" target="_blank" rel="noreferrer" name="{{item.icon}}">{% include social-icons.html icon=item.icon %}</a>
         {% endfor %}
 
       </div>
