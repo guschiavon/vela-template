@@ -21,7 +21,7 @@
       {% endif %}
       {% endfor %}
       {% for item in site.data.settings.global.social %}
-        <a href="{{item.url}}" class="nav-social" target="_blank">{% include social-icons.html icon=item.icon %}</a>
+        <a href="{{item.url}}" class="nav-social" target="_blank" rel="noreferrer">{% include social-icons.html icon=item.icon %}</a>
       {% endfor %}
     </nav>
     <button id="burger" class="burger">
@@ -48,7 +48,7 @@
       {% endfor %}
       <div>
         {% for item in site.data.settings.global.social %}
-          <a href="{{item.url}}" class="nav-social" target="_blank">{% include social-icons.html icon=item.icon %}</a>
+          <a href="{{item.url}}" class="nav-social" target="_blank" rel="noreferrer">{% include social-icons.html icon=item.icon %}</a>
         {% endfor %}
 
       </div>

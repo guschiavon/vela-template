@@ -1,6 +1,6 @@
 # Configuration file for access via CloudCannon interface
-
 global:
+  site_url:
   title: Cursos de Vela Oceânica - Velamagia
   tel: '+55 (47) 9 9204-1363'
   email: 'ola@velamagia.com.br'
@@ -11,7 +11,7 @@ global:
       url: 'https://instagram.com'   
     - icon: "Messenger"
       url: 'https://messenger.com'
-    
+  preview_image:  
 ##### Fonts #####
 fonts:
   google_fonts_embed_code_block: '<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,300;0,400;0,600;1,100;1,300;1,400;1,600&family=Questrial&display=swap" rel="stylesheet">' 
@@ -56,5 +56,7 @@ navigation:
       dropdown: false
       submenus:
         - name:
-          url:
-      
+          url:  
+seo:
+  site_description_text: Here' the site description text
+  keywords: ['vela oceânica', 'cursos de vela oceânica', 'passeios de barco em balneário camboriu']

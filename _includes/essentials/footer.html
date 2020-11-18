@@ -1,20 +1,20 @@
 <footer class="grid-noGutter-spaceAround footer padding-y-sm padding-x-lg bg-dark">
   <div class="col-6_xs-12-middle">
     <div class="footer-branding">
-      <a href="/" class="clickable-logo"><img src="/assets/images/logo.png" alt=""></a>
+      <a href="/" class="clickable-logo"><img src="/assets/images/logo.png" alt="{{site.data.settings.global.site-title}}"></a>
       <a href="/">Vela<strong>Magia</strong></a>
     </div>
     <div class="contact">
       <span>Marina Itajaí</span>
       <span>Itajaí - 88301-445</span>
       <span>Santa Catarina - Brasil</span>
-      <a href="tel:{{site.data.settings.global.tel | remove: " "}}">{{site.data.settings.global.tel}}</a>
+      <a href="tel:{{site.data.settings.global.tel | remove: ' '}}">{{site.data.settings.global.tel}}</a>
       <a href="mailto:{{site.data.settings.global.email}}">{{site.data.settings.global.email}}</a>
     </div>
   </div>
   <div class="col-6_xs-12-middle social right">
     {% for item in site.data.settings.global.social %}
-      <a href="{{item.url}}" class="social-link" target="_blank">{% include social-icons.html icon=item.icon %}</a>
+      <a href="{{item.url}}" class="social-link" target="_blank" rel="noreferrer">{% include social-icons.html icon=item.icon %}</a>
     {% endfor %}
   </div>
 </footer>
