@@ -52,7 +52,7 @@ navigation:
         - name: Porto Belo
           url: /passeios/porto-belo
     - name: Contato
-      url:
+      url: /contato
       dropdown: false
       submenus:
         - name:
