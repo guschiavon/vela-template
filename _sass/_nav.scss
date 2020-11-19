@@ -1,7 +1,9 @@
 .nav-container {
+  position: relative;
   display         : flex;
   align-items     : center;
   justify-content : space-between;
+  z-index: 10;
 }
 
 .nav-link {
@@ -15,6 +17,11 @@
   &:focus-within {
     color: $accent-color;
   }
+}
+.desktop-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .nav-link.dropdown {
   position: relative;
@@ -81,7 +88,7 @@
 .dropdown-container {
   display   : none;
   position  : absolute;
-  top       : 2rem;
+  top       : 2rem; 
   left      : 0;
   padding   : 1rem;
   text-align: left;
@@ -176,6 +183,7 @@
 .burger.open {
   span {
     color: $accent-color;
+    background-color: $accent-color;
     &:nth-of-type(2),
     &:nth-of-type(3) {
       transform-origin  : left-bottom;

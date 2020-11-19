@@ -1,4 +1,4 @@
-@media (min-width: 300px) and (max-width: 660px) {
+@media (min-width: 300px) and (max-width: 700px) {
   h1 {
     font-size: 3rem;
   }
@@ -23,6 +23,9 @@
         display: none;
       }
     }
+  }
+  .full-width-container {
+    clip-path: unset;
   }
   .nav-branding {
     .clickable-logo {
@@ -60,6 +63,7 @@
   }
   .burger {
     display: block;
+    padding-right: 2.5rem;
   }
   .footer {
     text-align: center;
@@ -74,7 +78,7 @@
     }
   }
 }
-@media (min-width: 661px) and (max-width: 768px) {
+@media (min-width: 701px) and (max-width: 768px) {
   .nav-branding {
     .clickable-logo {
       width: 65px;
@@ -97,11 +101,15 @@
 @media (min-width: 769px) and (max-width: 1024px) {
   .nav-branding {
     .clickable-logo {
-      width: 70px;
+      width: 65px;
+    }
+    a {
+      font-size: 1.7rem;
     }
   }
   .nav-link {
     font-size: 1rem;
+    margin-left: 0.5rem;
   }
   .padding-x-lg {
     padding-right: 7%;
