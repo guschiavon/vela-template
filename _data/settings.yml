@@ -47,8 +47,8 @@ navigation:
       submenus:
         - name: Florianópolis
           url: /passeios/florianopolis
-        - name: Itajaí
-          url: /passeios/itajai
+        - name: Balneário Camboriú
+          url: /passeios/balneario-camboriu
         - name: Porto Belo
           url: /passeios/porto-belo
     - name: Contato

@@ -28,7 +28,10 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <!-- Gridlex library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+  <!-- AOS library -->
+  
   <link rel="stylesheet" href="/styles/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
   <body>
     <header class="header-container" style="background-image: url(/assets/images/boat-placeholder-00006.jpg);">
@@ -70,7 +73,7 @@
           </li>
           
           <li class="dropdown-wrapper">
-            <a href="/passeios/itajai" class="dropdown-item">Itajaí</a>
+            <a href="/passeios/balneario-camboriu" class="dropdown-item">Balneário Camboriú</a>
           </li>
           
           <li class="dropdown-wrapper">
@@ -159,7 +162,7 @@
           </li>
         
           <li class="dropdown-wrapper">
-            <a href="/passeios/itajai" class="dropdown-item">Itajaí</a>
+            <a href="/passeios/balneario-camboriu" class="dropdown-item">Balneário Camboriú</a>
           </li>
         
           <li class="dropdown-wrapper">
@@ -215,7 +218,7 @@
       </div>
     </nav>     
   </div>
-  <div class="header-content padding-x-lg">
+  <div class="header-content padding-x-lg" data-aos="zoom-out-right" data-aos-duration="1200">
     <h1>
       Tome controle da <strong>sua vida.</strong>
     </h1>
@@ -246,7 +249,7 @@
         <p class="editable">
           Começe hoje e aprenda a velejar no litoral norte de Santa Catarina com um dos <strong>cursos de vela e navegação</strong> da Velamagia.
         </p>
-        <a href="/cursos" class="btn editable">
+        <a href="/cursos" class="btn editable" data-aos="zoom-in">
           Nossos cursos
         </a>
       </div>
@@ -261,7 +264,7 @@
 </section>
 <section id="full-width-banner-1" class="full-width-banner-1">
   <div class="banner-container flex-center padding-x-lg" style="background-image: url(/assets/images/boat-placeholder-00009.jpg);">
-    <div class="banner-content flex-left">
+    <div class="banner-content flex-left" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
       <h2 class="banner-heading">
         Aprenda a <strong>velejar</strong> hoje.
       </h2>
@@ -277,7 +280,7 @@
   <div class="grid-noGutter-spaceBetween-reverse padding-x-lg padding-y-md">
 
     <div class="col-5_md-12-middle">
-      <div class="padding-x-lg padding-y-md left">
+      <div class="padding-x-lg padding-y-md left" data-aos="fade-up">
         <h3>Seu instrutor</h3>
         <h2>Alessandro Ohlweiler Vasconcelos</h2>
         <p>
@@ -370,6 +373,10 @@
   </div>
 </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="/js/functions.js" type="text/javascript"></script>
   </body>
 </html>

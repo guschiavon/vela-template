@@ -28,7 +28,10 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <!-- Gridlex library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+  <!-- AOS library -->
+  
   <link rel="stylesheet" href="/styles/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
   <body>
     <header class="header-container" style="background-image: url(/assets/images/boat-placeholder-00004.jpg);">
@@ -70,7 +73,7 @@
           </li>
           
           <li class="dropdown-wrapper">
-            <a href="/passeios/itajai" class="dropdown-item">Itajaí</a>
+            <a href="/passeios/balneario-camboriu" class="dropdown-item">Balneário Camboriú</a>
           </li>
           
           <li class="dropdown-wrapper">
@@ -159,7 +162,7 @@
           </li>
         
           <li class="dropdown-wrapper">
-            <a href="/passeios/itajai" class="dropdown-item">Itajaí</a>
+            <a href="/passeios/balneario-camboriu" class="dropdown-item">Balneário Camboriú</a>
           </li>
         
           <li class="dropdown-wrapper">
@@ -215,7 +218,7 @@
       </div>
     </nav>     
   </div>
-  <div class="header-content padding-x-lg">
+  <div class="header-content padding-x-lg" data-aos="zoom-out-right" data-aos-duration="1200">
     <h1>
       As belezas da <strong>Costa Esmeralda.</strong>
     </h1>
@@ -237,7 +240,7 @@
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, et. Repellat consequuntur cupiditate eos aperiam odio consequatur saepe dolore soluta.
     </p>
     
-      <a href="/contato" class="btn">reserve já</a>
+      <a href="/contato" class="btn" data-aos="zoom-in" data-aos-duration="900">reserve já</a>
     
   </div>
 </section>
@@ -309,6 +312,10 @@
   </div>
 </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="/js/functions.js" type="text/javascript"></script>
   </body>
 </html>

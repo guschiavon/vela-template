@@ -7,17 +7,6 @@
   height: 90vh;
   min-height: 900px;
   width: 100vw;
-  // &::before {
-  //   content: '';
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   background-color: $dark-color;
-  //   opacity: 0.2;
-  //   z-index: 1;
-  // }
 }
 
 .header-content {
@@ -29,5 +18,8 @@
   transform: translateY(-50%);
   color: whitesmoke;
   z-index: 10;
+  h1 {
+        text-shadow: -1px 3px 6px #0000007a;
+  }
 }
 
