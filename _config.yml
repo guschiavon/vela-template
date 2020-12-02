@@ -1,3 +1,6 @@
+# Define the site's URL for the correct rendering of the sitemap.xml file
+url: 'https://smooth-hill.cloudvent.net'
+
 # Enable CloudCannon CMS interface
 cloudcannon:
   data: true
