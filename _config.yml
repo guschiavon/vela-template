@@ -19,9 +19,18 @@ permalink: /:path
 
 # useful comments for CloudCannon interface
 _comments:
-  background: 'Escolha o fundo da seção entre as opções'
+  background: 'Escolha a cor de fundo da seção entre as opções: bg-light (cor clara), bg-dark (cor escura) e bg-accent (cor de destaque)'
+  keywords: 'Palavras-chave para os sites de busca'
+  main_image: 'A imagem principal da página'
   description_text: 'Importante para o posicionamento nos sites de busca; utilizar palavras-chave e descrição do conteúdo em menos de 160 caracteres'
-  header_color: 'Escolha a cor do content de abertura da página; útil para modificar as cores de acordo com a imagem.'
+  header_color: 'Escolha a cor do texto sobre a imagem principal; útil para modificar as cores de acordo com a imagem'
+  heading_html: 'Utilizar o tipo de texto Normal para manter uniformidade do layout'
+  content_html: 'Para estilizar o texto, utilisar as ferramentas de texto'
+  content_1_html: 'Para estilizar o texto, utilisar as ferramentas de texto'
+  content_2_html: 'Para estilizar o texto, utilisar as ferramentas de texto'
+  add_button: 'Caso o box seja marcado, um botão será disponibilizado na seção'
+  sections: 'Adicione seções extras na página'
+  background_image: 'Imagem de fundo da seção'
 
 ## Collections permalinks
 collections:
@@ -115,7 +124,7 @@ _array_structures:
           label: Overview
           heading_html:
           content_html:
-          incluir_botao: false
+          add_button: false
           button_text:
           button_url:
       - label: Image Boxes
@@ -142,7 +151,7 @@ _array_structures:
           heading_html:
           content_html:
           image:
-          imagem_alt_text:
+          image_alt_text:
           button_text:
           button_url:
       - label: Inclusions

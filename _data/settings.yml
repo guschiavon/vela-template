@@ -1,6 +1,6 @@
 # Configuration file for access via CloudCannon interface
 global:
-  site_url: 
+  site_url: 'https://www.velamagia.com.br'
   title: Cursos de Vela Oceânica - Velamagia
   tel: '+55 (47) 9 9204-1363'
   email: 'ola@velamagia.com.br'

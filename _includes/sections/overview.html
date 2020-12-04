@@ -4,10 +4,10 @@
     <h2>
       {{section.heading_html}}
     </h2>
-    <p>
+    <div>
       {{section.content_html}}
-    </p>
-    {% if section.incluir_botao %}
+    </div>
+    {% if section.add_button %}
       <a href="{{section.button_url}}" class="btn" data-aos="zoom-in" data-aos-duration="900" aria-label="Clique para acessar mais informações sobre {{section.heading_html}}">{{section.button_text}}</a>
     {% endif %}
   </div>
