@@ -18,6 +18,7 @@
       &::before {
         content: "";
         border: 2px solid $accent-color;
+        background-blend-mode: color;
         position: absolute;
         top: -2rem;
         right: -2rem;

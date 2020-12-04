@@ -1,0 +1,14 @@
+{% for section in page.sections %}
+  {% case section._id %}
+    {% when 'overview'%}
+      {% include sections/overview.html %}
+    {% when 'inclusions'%}
+      {% include sections/inclusions.html %}
+    {% when 'img-txt-1'%}
+      {% include sections/img-txt-1.html %}
+    {% when 'image-boxes'%}
+      {% include sections/image-boxes.html %}
+    {% when 'full-width-banner'%}
+      {% include sections/full-width-banner.html %}
+  {% endcase %}
+{% endfor%}

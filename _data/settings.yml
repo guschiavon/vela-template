@@ -11,6 +11,8 @@ global:
       url: 'https://instagram.com'   
     - icon: "Messenger"
       url: 'https://messenger.com'
+    - icon: "WhatsApp"
+      url: 'https://wa.me/+5547992041363'
   preview_image:  
 ##### Fonts #####
 fonts:
@@ -40,7 +42,7 @@ navigation:
         - name: Iniciante
           url: /cursos/iniciante
         - name: Aperfeiçoamento
-          url: /cursos/aperfeiçoamento
+          url: /cursos/aperfeicoamento
     - name: Passeios
       url:
       dropdown: true

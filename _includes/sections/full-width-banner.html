@@ -1,0 +1,15 @@
+<section id="full-width-banner-1" class="full-width-banner-1">
+  <div class="banner-container flex-center padding-x-lg" style="background-image: url({{section.background_image}});">
+    <div class="banner-content flex-left" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
+      <h2 class="banner-heading">
+        {{section.heading_html}}
+      </h2>
+      <p>
+        {{section.content_html}}
+      </p>
+      {% if section.add_button %}
+      <a href="{{section.button_url}}" class="btn-outline">{{section.button_text}}</a>
+      {% endif %}
+    </div>
+  </div>
+</section>

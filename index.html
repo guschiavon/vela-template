@@ -2,11 +2,19 @@
 layout: default
 title: Cursos de Vela Oceânica e Navegação Velamagia
 description_text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis deleniti optio repudiandae laboriosam doloribus, soluta nulla voluptatum, maxime facere laborum accusantium tempora sunt, voluptates cumque dignissimos aliquid quasi. Incidunt, quasi.
-imagem_principal_image: /assets/images/boat-placeholder-00006.jpg
-chamada_principal_html: >-
+main_image: /assets/images/boat-placeholder-00006.jpg
+main_heading_html: >-
   Tome controle da <strong>sua vida.</strong>
 header_content_html: >-
   Está na hora de tornar seu sonho de <strong>aprender a velejar</strong> em realidade.<br>Expanda seus horizontes junto com a Escola de Vela Oceânica Velamagia.
+header_color:
+sections:
+  - _id: full-width-banner
+    background_image: /assets/images/boat-placeholder-00009.jpg
+    heading_html: Aprenda a <strong>velejar</strong> hoje.
+    content_html: Os cursos de vela e navegação da Vela Magia atendem tanto aos marinheiros de primeira viagem como aos que já possuem experiência em barcos a vela e desejam aumentar o conhecimento para poder experenciar travessias oceânicas.
+    button_text: Reserve já
+    button_url: /reservas
 ---
 <section id="img-txt-1" class="img-txt-1 bg-light">
   <svg id="triangle-svg-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1898.021 65.626"><path d="M3888.021,5250.067,1990,5315.694H3888.021Z" transform="translate(-1990 -5250.067)" /></svg>
@@ -17,7 +25,7 @@ header_content_html: >-
           Experimente. Aprenda. <strong>Viva.</strong>
         </h2>
         <p class="editable">
-          A <strong>escola de Vela Oceânica e Navegação Velamagia</strong> é a sua porta de entrada para o vasto mundo da vela.
+          A <strong>escola de Vela Oceânica e Navegação VelaMagia</strong> é a sua porta de entrada para o vasto mundo da vela.
         </p>
         <p class="editable">
            Em operação desde Janeiro de 2001 em Santa Catarina, realiza todos os <strong>cursos de vela para iniciantes </strong>e aperfeiçoamento para os já experientes, sempre de forma prática a bordo de um veleiro oceânico modelo "Cabo Horn 35" ou em algum outro de seus associados, nos casos de grupos maiores.
@@ -42,22 +50,10 @@ header_content_html: >-
   </div>
   <svg id="triangle-svg-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1898.021 65.626"><path d="M3888.021,5315.694,1990,5250.068H3888.021Z" transform="translate(-1990 -5250.068)" /></svg>
 </section>
-<section id="full-width-banner-1" class="full-width-banner-1">
-  <div class="banner-container flex-center padding-x-lg" style="background-image: url(/assets/images/boat-placeholder-00009.jpg);">
-    <div class="banner-content flex-left" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
-      <h2 class="banner-heading">
-        Aprenda a <strong>velejar</strong> hoje.
-      </h2>
-      <p>
-        Os cursos de vela e navegação da Vela Magia atendem tanto aos marinheiros de primeira viagem como aos que já possuem experiência em barcos a vela e desejam aumentar o conhecimento para poder experenciar travessias oceânicas.
-      </p>
-      <a href="/" class="btn-outline">Como começar?</a>
-    </div>
-  </div>
-</section>
+{% include sections.html %}
+
 <section id="img-txt-2" class="img-txt-2 bg-accent">
   <div class="grid-noGutter-spaceBetween-reverse padding-x-lg padding-y-md">
-
     <div class="col-5_md-12-middle">
       <div class="padding-x-lg padding-y-md left" data-aos="fade-up">
         <h3>Seu instrutor</h3>
@@ -69,8 +65,7 @@ header_content_html: >-
           <li>Instrutor de Mergulho e Primeiros Socorros pela "PADI" California - USA - (Professional Association of Dive Instructors);</li>
           <li>Apaixonado pela liberdade oceânica e seus infinitos encantos;</li>
           <li>Praticante de diversos esportes aquáticos, tais como: vela oceânica, windsurf, surf, sup paddle, canoagem e mergulho…</li>
-        </ul>
-        
+        </ul>      
       </div>
     </div>
     <div class="col-5_md-12-middle img-column">

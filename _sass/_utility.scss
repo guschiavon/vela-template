@@ -128,3 +128,24 @@
     height  : 100%;
   }
 }
+
+// Typography
+
+.claro {
+  color: $light-color;
+  svg {
+    fill: $light-color;
+  }
+}
+.escuro {
+  color: $dark-color;
+  svg {
+    fill: $dark-color;
+  }
+}
+.destaque {
+  color: $accent-color;
+  svg {
+    fill: $accent-color;
+  }
+}

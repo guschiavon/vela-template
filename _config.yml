@@ -19,8 +19,9 @@ permalink: /:path
 
 # useful comments for CloudCannon interface
 _comments:
-  fundo: 'Escolha o fundo da seção entre as opções'
+  background: 'Escolha o fundo da seção entre as opções'
   description_text: 'Importante para o posicionamento nos sites de busca; utilizar palavras-chave e descrição do conteúdo em menos de 160 caracteres'
+  header_color: 'Escolha a cor do content de abertura da página; útil para modificar as cores de acordo com a imagem.'
 
 ## Collections permalinks
 collections:
@@ -40,10 +41,23 @@ defaults:
     values:
       layout: pages
       title:
+      main_image:
       description_text:
-      imagem_principal_image:
-      chamada_principal:
-      header_content_text:
+      main_heading_html:
+      header_content_html:
+      sections: 
+  -
+    scope:
+      path: "/passeios"
+      type: "pages"
+    values:
+      layout: pages
+      title:
+      main_image:
+      description_text:
+      main_heading_html:
+      header_content_html:
+      header_color:
       sections: 
 
 # Dependencies
@@ -77,10 +91,16 @@ icons:
  - "YouTube"
  - "Email"
 
-fundos:
+backgrounds:
   - "bg-light"
   - "bg-dark"
   - "bg-accent"
+
+header_colors:
+  - "claro"
+  - "escuro"
+  - "destaque"
+
 
 sections: []
 _array_structures:
@@ -89,39 +109,61 @@ _array_structures:
     values:
       - label: Overview
         description: Um parágrafo de abertura para a página
-        icon: text
+        icon: subject
         value:
           _id: overview
           label: Overview
-          cabecalho_html:
-          texto_html:
+          heading_html:
+          content_html:
           incluir_botao: false
-          texto_botao:
-          destino_botao_url:
+          button_text:
+          button_url:
       - label: Image Boxes
         description: Grid com imagens e descrição de conteúdo
-        icon: text
+        icon: view_module
         value:
           _id: image-boxes
           label: Image Boxes
           imagem_1_image:
           imagem_1_alt_text:
-          cabecalho_1_html:
-          paragrafo_1_html:
+          heading_1_html:
+          content_1_html:
           imagem_2_image:
           imagem_2_alt_text:
-          cabecalho_2_html:
-          paragrafo_2_html:
+          heading_2_html:
+          content_2_html:
       - label: Imagem e Texto
-        description: Seção com uma imagem e espaço para texto
-        icon: text
+        description: Seção com uma imagem e espaço para content
+        icon: recent_actors
         value:
           _id: img-txt-1
           label: Imagem e Texto
-          fundo:
-          cabecalho_html:
-          texto_html:
-          imagem_image:
+          background:
+          heading_html:
+          content_html:
+          image:
           imagem_alt_text:
-          texto_botao:
-          destino_botao_url: 
+          button_text:
+          button_url:
+      - label: Inclusions
+        description: Seção para informar as inclusões do item       
+        icon: add_to_photos
+        value:
+          _id: inclusions
+          label: Inclusions
+          background:
+          heading_html:
+          inclusions_html:
+          button_text:
+          button_url:
+      - label: Full-Width Banner
+        description: Seção horizontal com imagem e box para conteúdo
+        icon:
+        value:
+          _id: full-width-banner
+          background_image:
+          heading_content:
+          content_html:
+          add_button: true  
+          button_text:
+          button_url:

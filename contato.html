@@ -1,0 +1,17 @@
+---
+layout: default
+title: Contato - VelaMagia
+main_image: /assets/images/boat-placeholder-00009.jpg
+description_text: 
+main_heading_html: Entre em Contato
+header_content_html:
+header_color:
+---
+<section id="contact" class="contact center padding-x-md padding-y-md">
+  <h2 class="editable">Entre em Contato</h2>
+  <p class="editable">Reserve já a sua experiência ou tire suas dúvidas!</p>
+  <h3 class="editable">Escolha o modo preferido:</h3>
+  <a href="https://wa.me/{{site.data.settings.global.tel | remove: ' ' | remove: '(' | remove: ')' | remove: '-'}}" class="contact-link escuro padding-x-sm" rel="noreferrer" aria-label="Click for WhatsApp contact">{% include social-icons.html icon="WhatsApp" %}</a>
+  <a href="mailto:{{site.data.settings.global.email}}" class="contact-link escuro padding-x-sm" rel="noreferrer" aria-label="Click to email">{% include social-icons.html icon="Email" %}</a>
+  <a href="https://messenger.com" class="contact-link escuro padding-x-sm" rel="noreferrer" aria-label="Click to email">{% include social-icons.html icon="Messenger" %}</a>
+</section>
