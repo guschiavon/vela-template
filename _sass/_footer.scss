@@ -1,4 +1,13 @@
 .footer {
+  .small a {
+    text-transform: unset;
+    color: lighten($dark-color, 30);
+    &:hover,
+    &:focus {
+      color: lightblue;
+      transition: 0.2s all;
+    }
+  }
   span {
     margin-bottom: 0;
   }
