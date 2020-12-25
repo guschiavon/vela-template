@@ -23,6 +23,9 @@
         width: inherit;
         z-index: 0;
       }
+      .responsive-img {
+        object-position: center;
+      }
     }  
     svg {
       &:first-of-type {

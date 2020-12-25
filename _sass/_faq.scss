@@ -1,0 +1,22 @@
+.faq-container {
+  text-align: center;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: inherit;
+  padding: 1rem;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1rem;
+  .faq-btn {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  .faq-content {
+    display: none;
+  }
+  .faq-content.reveal {
+    display: block;
+    margin-top: 1.5rem;
+  }
+}

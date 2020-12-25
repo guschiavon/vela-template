@@ -1,0 +1,23 @@
+<section id="faq" class="faq bg-light">
+  <div class="padding-x-md padding-y-md">
+    <div class="grid-noGutter">
+      <div class="col-6_sm-12-middle">
+        <h2 class="editable">
+          Perguntas frequentes
+        </h2>
+      </div>
+      <div class="col-6_sm-12-middle">
+        {% for faq in section.faqs %}
+        <div class="faq-container">
+          <button class="faq-btn">
+            {{faq.faq_title}}
+          </button>
+          <div class="faq-content">
+            <p>{{faq.faq_content_html}}</p>
+          </div>
+        </div>
+        {% endfor %}     
+      </div>
+    </div>
+  </div>
+</section>

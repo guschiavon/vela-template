@@ -2,25 +2,14 @@
 layout: default
 ---
 
-{% for section in page.sections %}
-  {% case section._id %}
-    {% when 'overview' %}
-      {% include sections/overview.html %}
-    {% when 'image-boxes' %}  
-      {% include sections/image-boxes.html %}
-    {% when 'inclusions' %}  
-      {% include sections/inclusions.html %}
-    {% when 'img-txt-1' %}  
-      {% include sections/img-txt-1.html %}
-  {% endcase %}
-{% endfor %}
-
+{% include sections.html %}
+{{content}}
   
 <section id="full-width-img" class="full-width-img flex-center">
   <img src="/assets/images/boat-placeholder-00008.jpg" alt="" class="responsive-img" />
-  <div class="content">
-    <h2 class="editable">Reserve já o seu lugar!</h2>
-    <p class="editable">Preço especial para grupos de 4+ pessoas. Vagas e saídas limitadas.</p>
-    <a href="/contato" class="btn-outline">Reserve já</a>
+  <div class="content padding-x-lg">
+    <h2 class="editable">Aprenda a velejar em Santa Catarina!</h2>
+    <p class="editable">Descubra uma nova paixão e aventure-se! Oferecemos descontos para pagamentos a vista, grupos fechados, casais, treinamentos em dias de semana e/ou sem pernoites e alimentação inclusos. Vagas e saídas limitadas.</p>
+    <a href="/contato" class="btn-outline">Peça mais informações</a>
   </div>
 </section>

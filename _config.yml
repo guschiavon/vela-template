@@ -176,3 +176,11 @@ _array_structures:
           add_button: true  
           button_text:
           button_url:
+      - label: FAQs
+        description: Seção de perguntas mais frequentes e respostas
+        icon:
+        value:
+          _id: faq
+          faqs:
+            - faq_title:
+              faq_content_html:
