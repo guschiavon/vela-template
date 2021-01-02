@@ -11,20 +11,26 @@
     text-transform: uppercase;
     font-size: 1.5rem;
     margin-bottom: 0;
+    position: relative;
+    z-index: 100;
     &:focus {
       outline: none;
-      color: $accent-color;
+      stroke: $accent-color;
     }
   }
   .faq-content {
-    opacity: 0;
+    transform: scale(0);
     height: 0;
-    transition: 0.1s all;
+    transition: transform 0.1s;
+    position: relative;
+    z-index: 99;
   }
   .faq-content.reveal {
-    opacity: 1;
+    transform: scale(1);
     height: auto;
     margin-top: 1.5rem;
-    transition: 0.1s all;
+    transition: transform 0.3s;
+    position: relative;
+    z-index: 99;
   }
 }

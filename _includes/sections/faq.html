@@ -5,6 +5,8 @@
         <h2 class="editable">
           Perguntas frequentes
         </h2>
+        <p class="editable">Clique na pergunta para saber mais detalhes. <br/>
+          Não achou a resposta que buscava? <a href="https://wa.me/{{site.data.settings.global.tel | remove: ' ' | remove: '(' | remove: ')' | remove: '-'}}" class="inline-anchor" rel="noreferrer noopener">Entre em contato</a></p>
       </div>
       <div class="col-6_sm-12-middle">
         {% for faq in section.faqs %}
