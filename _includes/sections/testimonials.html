@@ -1,0 +1,13 @@
+<section id="testimonials" class="testimonials px-md py-md">
+  <h2>Depoimentos</h2>
+  <p class="editable">Quem já participou do curso de vela oceânica para iniciantes da VelaMagia teve uma experiência inesquecível; a seguir alguns depoimentos de marinheiros satisfeitos:</p>
+  {% for testimonial in section.testimonials %}
+  <div class="testimonials-container my-4">
+    <blockquote class="testimonials-content">{{testimonial.content_html}}</blockquote>
+    <div class="testimonials-avatar">
+      <img src="{{testimonial.avatar_image}}" class="responsive-img" alt="Foto de {{testimonial.author}}, participante do Curso de vela oceânica Velamagia">
+    </div>
+    <cite class="testimonials-author">{{testimonial.author}}</cite>
+  </div>
+  {% endfor %}
+</section>

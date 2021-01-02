@@ -57,6 +57,9 @@
     &:first-of-type {
       padding-left: 0;
     }
+    &:focus {
+      color: $accent-color;
+    }
   }
 }
 .nav-logo {
@@ -132,10 +135,10 @@
     transition: 0.2s all;
     &:nth-of-type(2),
     &:nth-of-type(3) {
-      top     : 0.5rem;
+      top     : 0.7rem;
     }
     &:nth-of-type(4) {
-      top     : 1rem;
+      top     : 1.3rem;
     }
   }
 }

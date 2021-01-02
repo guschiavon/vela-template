@@ -1,0 +1,32 @@
+.testimonials {
+  .testimonials-content {
+    font-size   : 2rem;
+    font-style  : italic;
+    text-indent : 3rem;
+    position    : relative;
+    &:before {
+      content: "\201C";
+      top       : -3rem;
+      left      : -2rem;
+      transform : translateX(-50px);
+      font-size : 12rem;
+      opacity   : 0.3;
+      position  : absolute;
+    }
+  }
+  .testimonials-avatar {
+    border-radius : 50%;
+    width         : 100px;
+    height        : 100px;
+    margin        : auto;
+    margin-bottom : 1.5rem;
+    overflow      : hidden;
+  }
+  .testimonials-author {
+    display     : block;
+    text-align  : center;
+    &:before {
+      content   : "--";
+    }
+  }  
+}

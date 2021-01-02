@@ -7,6 +7,7 @@ $(document).ready(function (){
     $(this).parent('.faq-container').toggleClass('bg-accent');
     $(this).siblings('.faq-content').toggleClass('reveal');
   })
-}); 
+});
+
 
 

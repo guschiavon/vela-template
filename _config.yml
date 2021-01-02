@@ -184,3 +184,12 @@ _array_structures:
           faqs:
             - faq_title:
               faq_content_html:
+      - label: Depoimentos
+        description: Seção para incluir depoimentos dos participantes
+        icon:
+        value:
+          _id: testimonials
+          testimonials:
+            - author:
+              content_html:
+              avatar_image:
